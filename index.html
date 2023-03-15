@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport"/>
+  <title>Educational RC</title>
+  <!-- Load Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">  <!-- Load Styles -->
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+  <!---------Container-------->
+  <div id="container" class="animate-bottom">
+    <!---------Wrapper Container---------->
+    <div id="wrap" >
+      <div id="loader"></div>
+      <div id="card" class="animate-bottom" >
+        <!-------Header------>
+        <div id="header" >
+          <span class="title" >
+            Complete the words.
+            <span id="button2" class="button2">
+              <img src="utilities/btn2.png">
+            </span>
+            <span id="button1" class="button1">
+              <img src="utilities/btn1.png">
+            </span>
+          </span>
+        </div>
+        <!---------Header Ends--------->
+        <audio id="audio1" src="utilities/correct.mp3" preload="auto"></audio>
+        <audio id="audio2" src="utilities/incorrect.mp3" preload="auto"></audio>
+        <!----------Background-------->
+        <div id="background" >
+          <!-----------Card Content Starts--------->
+          <div id="outer">
+            <div id="out">
+              <div class="card-content">
+                <div class="inner">
+                  <div class="content">
+                    <div class="choices">
+                      <button id="ch1" class="choice-btn"><div class="btn-text">a</div></button>
+                      <button id="ch2" class="choice-btn"><div class="btn-text">p</div></button>
+                    </div>
+                    <div class="questions">
+                      <div class="first-line">
+                        <div class="first-q">
+                          <div class="div-q">
+                          1&nbsp;&nbsp;t 
+                          <span id="ans1"  data-Answer="a" class="qtn">&nbsp;</span> 
+                          <sup id="right1"><img src="utilities/right.png"/></sup>
+                          <sup id="wrong1"><img src="utilities/wrong.png"/></sup>
+                          <span class="fx1">p</span>
+                          </div>
+                          <div id="img" ><img src="utilities/q1.png"/></div>
+                        </div>
+                        <div class="second-q">
+                          <div class="div-q">
+                            2&nbsp;&nbsp;
+                            <span id="ans2"  data-Answer="p" class="qtn">&nbsp;</span>
+                            <sup id="right2"><img src="utilities/right.png"/></sup>
+                            <sup id="wrong2"><img src="utilities/wrong.png"/></sup>
+                            <span class="fx2" >a&nbsp;t</span>
+                          </div>
+                          <div id="img" ><img src="utilities/q2.png"/></div>
+                        </div>
+                      </div>
+                      <div class="second-line">
+                        <div class="third-q" >
+                          <div class="div-q">
+                            3&nbsp;&nbsp;m
+                            <span id="ans3"  data-Answer="a" class="qtn">&nbsp;</span>
+                            <sup id="right3"><img src="utilities/right.png"/></sup>
+                            <sup id="wrong3"><img src="utilities/wrong.png"/></sup>
+                            <span class="fx3">p</span>
+                            </div>
+                            <div id="img" ><img src="utilities/q3.png"/></div>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!------Card Content Ends------->
+        </div>
+        <!---------Background Ends------->
+        <!-----------Footer-------------->
+        <div id="footer" >
+          <div id="last-line" >
+            <div class="div1">
+              <span id="button3" class="button3">
+              <img src="utilities/btn3.png">
+            </span></div>
+            <div class="div2">
+              <span id="button4" class="button4">
+                <img src="utilities/btn4.png">
+              </span>
+            </div>
+          </div>
+        </div>
+        <!-----------Footer Ends-------------->
+        <!---------Popup starts------------>
+        <!-- Dummy and Help  -->
+        <div id="overlay" class="overlay">
+          <div id="model" class="modal">
+            <div id="dummy" class="resource">
+              <div  class="dummy-image">
+                <img src="utilities/dummy.jpg"/>
+              </div>
+            </div>
+            <div id="help" class="help">
+              Help content goes here.
+            </div>
+            <span id="close" class="close">
+              <img src="utilities/close.png">
+            </span>
+          </div>
+        </div>
+        <!------Ends------>
+      </div>
+    </div>
+  </div>
+
+  
+
+<script src="js/app.js"></script>
+</body>
+</html>
